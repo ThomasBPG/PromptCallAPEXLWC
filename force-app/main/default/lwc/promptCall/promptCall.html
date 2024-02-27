@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Einstein AI" icon-name="utility:einstein">
+        <template if:true={isLoading}>
+            <div class="slds-is-relative"><lightning-spinner variant="brand" alternative-text="Loading..."></lightning-spinner></div>
+        </template>
+        <div class="slds-var-m-around_medium">
+            <lightning-textarea class="custom-textarea" label="Einstein response" value={promptResponse} message-when-value-missing="Response pending..." read-only></lightning-textarea>
+            <br />
+            <lightning-button label="Generate response" title="Generate response" onclick={callPrompt} class="slds-m-left_x-small"></lightning-button>
+        </div>
+    </lightning-card>
+</template>
