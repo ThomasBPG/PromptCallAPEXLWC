@@ -1,5 +1,5 @@
 import { LightningElement,track,api } from 'lwc';
-import generateResponse from "@salesforce/apex/PromptCallGA.generateResponse";
+import generateResponse from "@salesforce/apex/PromptCall.generateResponse";
 import { getRecord } from "lightning/uiRecordApi";
 
 export default class PromptCall extends LightningElement {

@@ -1,4 +1,4 @@
-public with sharing class PromptCallGA {
+public with sharing class PromptCall {
 
     @AuraEnabled(cacheable=false)
 	public static String generateResponse(String messageId)
