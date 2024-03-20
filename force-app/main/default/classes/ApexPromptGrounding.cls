@@ -34,6 +34,6 @@ public class ApexPromptGrounding {
 
     public class Response {
         @InvocableVariable
-        public String prompt;
+        public String Prompt;
     }
 }
